@@ -1,4 +1,5 @@
 
+---
 
 # 🚀 Imersão Alura com Google Gemini
 
@@ -19,25 +20,24 @@ Bem-vindo ao meu projeto, desenvolvido como parte da Imersão Dev da Alura com o
 ### Navegando no Site:
 
 1. **Tela Inicial**: Na tela inicial, você encontrará duas opções:
-    - Se você é iniciante, faça o questionário.
-    - Se já tem alguma experiência, utilize o buscador de roadmaps.
+   - Se você é iniciante, faça o questionário.
+   - Se já tem alguma experiência, utilize o buscador de roadmaps.
     
-    ![Tela Inicial](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/9a65862b-6b6d-4bed-b7e2-b1de2430fdcd/Captura_de_Tela_(11).png)
+   ![Tela Inicial](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/9a65862b-6b6d-4bed-b7e2-b1de2430fdcd/Captura_de_Tela_(11).png)
     
 2. **Faça o Questionário**: O questionário cobre diversas carreiras e ajudará você a se identificar com a que mais se adequa aos seus interesses.
     
-    ![Questionário](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/2b093b2f-5847-43ec-a291-7a35ccdfa95e/Captura_de_Tela_(12).png)
+   ![Questionário](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/2b093b2f-5847-43ec-a291-7a35ccdfa95e/Captura_de_Tela_(12).png)
     
 3. **Busque Roadmaps**: Se você já tem uma ideia do que deseja seguir, mas ainda está um pouco perdido, utilize o buscador de roadmaps. Há muitos disponíveis, e novos estão a caminho.
 
-    div align="center"
-img src="https://github.com/user-attachments/assets/2ef69c22-6d13-4a3f-9cab-11979fb833f8" width="0px" /
-/div
-
+   <div align="center">
+   <img src="https://github.com/user-attachments/assets/2ef69c22-6d13-4a3f-9cab-11979fb833f8" width="600px" />
+   </div>
     
 4. **Dentro do Roadmap**: Cada roadmap possui um nível de detalhamento único, oferecendo informações valiosas para seu planejamento de carreira.
     
-    ![Detalhamento do Roadmap](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/43f1a4f6-4794-4f39-b3e3-463c54527ea2/Captura_de_Tela_(14).png)
+   ![Detalhamento do Roadmap](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/43f1a4f6-4794-4f39-b3e3-463c54527ea2/Captura_de_Tela_(14).png)
     
 
 ## 🛠️ Tecnologias Utilizadas
@@ -48,7 +48,7 @@ img src="https://github.com/user-attachments/assets/2ef69c22-6d13-4a3f-9cab-1197
 
 ## 🌐 Acesso
 
-Experimente a aplicação [aqui](Link do vercel) e descubra como ela pode ajudar você a definir sua trajetória em TI!
+Experimente a aplicação [aqui](#) e descubra como ela pode ajudar você a definir sua trajetória em TI!
 
 ## 🤝 Contribua com o Projeto
 
@@ -69,3 +69,4 @@ Tem dúvidas ou sugestões? Fique à vontade para entrar em contato!
 - **Email**: [jardellucas@gmail.com](mailto:jardellucas@gmail.com) 📧
 - **LinkedIn**: [Lucas Andrade](https://www.linkedin.com/in/lucas-andrade-6a03331b2/) 🌐
 
+---
