@@ -1,10 +1,3 @@
-Para adicionar imagens no README.md, você pode usar a sintaxe Markdown padrão. A sintaxe correta para adicionar uma imagem é:
-
-```markdown
-![Texto alternativo](URL da imagem)
-```
-
-Aqui está como ficaria o seu README com as imagens corretamente formatadas:
 
 ---
 
@@ -27,22 +20,30 @@ Bem-vindo ao meu projeto, desenvolvido como parte da Imersão Dev da Alura com o
 ### Navegando no Site:
 
 1. **Tela Inicial**: Na tela inicial, você encontrará duas opções:
-    - Se você é iniciante, faça o questionário.
-    - Se já tem alguma experiência, utilize o buscador de roadmaps.
+   - Se você é iniciante, faça o questionário.
+   - Se já tem alguma experiência, utilize o buscador de roadmaps.
     
-    ![Tela Inicial](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/9a65862b-6b6d-4bed-b7e2-b1de2430fdcd/Captura_de_Tela_(11).png)
+   <div align="center">
+   <img src="https://github.com/user-attachments/assets/e7b4f674-7a20-4a0c-84d5-821a9633a1ec" width="600px" />
+   </div>
     
 2. **Faça o Questionário**: O questionário cobre diversas carreiras e ajudará você a se identificar com a que mais se adequa aos seus interesses.
     
-    ![Questionário](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/2b093b2f-5847-43ec-a291-7a35ccdfa95e/Captura_de_Tela_(12).png)
+   <div align="center">
+   <img src="https://github.com/user-attachments/assets/6e4e9155-869d-4093-8c9b-05f6b5dab9d9" width="600px" />
+   </div>
     
 3. **Busque Roadmaps**: Se você já tem uma ideia do que deseja seguir, mas ainda está um pouco perdido, utilize o buscador de roadmaps. Há muitos disponíveis, e novos estão a caminho.
-    
-    ![Buscador de Roadmaps](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/775d7ed2-746b-4e13-ad84-bddc0dcee7b5/Captura_de_Tela_(13).png)
+
+   <div align="center">
+   <img src="https://github.com/user-attachments/assets/2ef69c22-6d13-4a3f-9cab-11979fb833f8" width="600px" />
+   </div>
     
 4. **Dentro do Roadmap**: Cada roadmap possui um nível de detalhamento único, oferecendo informações valiosas para seu planejamento de carreira.
     
-    ![Detalhamento do Roadmap](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/43f1a4f6-4794-4f39-b3e3-463c54527ea2/Captura_de_Tela_(14).png)
+   <div align="center">
+   <img src="https://github.com/user-attachments/assets/726955d2-7699-4940-8a25-4554bc170b0b" width="600px" />
+   </div>
     
 
 ## 🛠️ Tecnologias Utilizadas
@@ -51,9 +52,8 @@ Bem-vindo ao meu projeto, desenvolvido como parte da Imersão Dev da Alura com o
 - **HTML**: Estrutura da página.
 - **CSS**: Estilização e layout.
 
-## 🌐 Acesso
-
-Experimente a aplicação [aqui](Link do vercel) e descubra como ela pode ajudar você a definir sua trajetória em TI!
+🌐 Acesso
+Para acessar o projeto, você pode fazer o deploy em plataformas como o Vercel ou Netlify. Essas ferramentas permitem hospedar aplicativos de forma rápida e fácil, sem a necessidade de configurar servidores manualmente.
 
 ## 🤝 Contribua com o Projeto
 
@@ -75,5 +75,3 @@ Tem dúvidas ou sugestões? Fique à vontade para entrar em contato!
 - **LinkedIn**: [Lucas Andrade](https://www.linkedin.com/in/lucas-andrade-6a03331b2/) 🌐
 
 ---
-
-Com esta sintaxe, as imagens serão exibidas corretamente em seu README.md. Certifique-se de que as URLs das imagens estejam acessíveis publicamente.
