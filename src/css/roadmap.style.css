@@ -1,0 +1,215 @@
+/* roadmap.style.css */
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte moderna e elegante */
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top left, #121212, #2e2e2e); /* Gradiente radial para um efeito de profundidade */
+    color: #e4e4e4;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 25px; /* Bordas arredondadas mais acentuadas */
+    background: #1e1e1e;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7); /* Sombra mais pronunciada */
+    animation: fadeInUp 1s ease-out; /* Animação de entrada mais suave */
+    border: 1px solid #333; /* Borda sutil para contraste adicional */
+}
+
+h1 {
+    font-size: 4rem; /* Tamanho maior para maior impacto */
+    margin-bottom: 20px;
+    color: #e67e22;
+    text-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    animation: fadeInDown 1s ease-out;
+    text-align: center;
+    letter-spacing: 3px; /* Espaçamento entre letras aumentado */
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 4px;
+    background: linear-gradient(90deg, #e67e22, #f39c12);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    animation: shine 2s infinite; /* Animação de brilho */
+}
+
+.section {
+    background: #2b2b2b;
+    border-radius: 20px; /* Bordas arredondadas mais suaves */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    margin: 30px 0;
+    transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 255, 255, 0.1); /* Efeito de destaque suave */
+    transition: width 0.4s ease;
+}
+
+.section:hover::before {
+    width: 100%; /* Efeito de preenchimento ao passar o mouse */
+}
+
+.section:hover {
+    background-color: #333;
+    transform: translateY(-10px) scale(1.03); /* Efeito de elevação e zoom mais acentuado */
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+    border: 1px solid #e67e22; /* Borda destacada ao passar o mouse */
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ecf0f1;
+    margin: 0 0 20px;
+    position: relative;
+    padding-bottom: 15px; /* Espaçamento para a linha de destaque */
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #e67e22, #f39c12);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.4s ease, background 0.3s ease;
+}
+
+h2:hover::after {
+    transform: scaleX(1.1); /* Animação de destaque ao passar o mouse */
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.6s ease; /* Transição suave com padding */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.section.active .content {
+    max-height: 1000px;
+    opacity: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    color: #bdc3c7;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    transition: color 0.3s ease; /* Transição suave para a cor do texto */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 30px; /* Espaçamento mais largo para a lista */
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.4s ease, text-shadow 0.4s ease; /* Transição de cor e sombra */
+}
+
+a:hover {
+    color: #1abc9c;
+    text-shadow: 0 0 10px rgba(26, 188, 156, 0.7); /* Sombra mais pronunciada para links */
+}
+
+.return-button .button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #e67e22;
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-top: 30px;
+    transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    animation: buttonPulse 2s infinite; /* Animação pulsante para o botão */
+}
+
+.return-button .button:hover {
+    background-color: #d35400;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+}
+
+.return-button .button:active {
+    background-color: #c0392b;
+    transform: translateY(2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+/* Animações */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shine {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes buttonPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Efeito pulsante */
+    }
+}

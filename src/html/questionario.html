@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário de Carreira em TI</title>
+    <link rel="stylesheet" href="../css/questionario.style.css">
+    <script defer src="../js/questionario.script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Guia de Carreira</h1>
+            <p class="description">Responda ao questionário para obter recomendações personalizadas de carreiras em TI.
+                Se preferir, você também pode explorar roadmaps diretamente.</p>
+        </header>
+        <form id="questionario">
+            <!-- Dados Pessoais -->
+            <section class="section" id="section-dados-pessoais">
+                <h2>Dados Pessoais</h2>
+                <label for="nome">Qual é o seu nome?</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                <input type="button" value="Continuar" onclick="nextSection('section-pergunta1')" class="btn-form">
+            </section>
+
+            <!-- Perguntas sobre Carreiras -->
+            <section class="section section-perguntas" id="section-pergunta1">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devFrontEnd1">Imagine que seu gerente solicitou a criação de uma nova página de destino para
+                    um site de comércio eletrônico que precisa ser completamente responsiva e acessível. Você será
+                    responsável por decidir toda a estrutura do CSS e garantir que o layout funcione bem em dispositivos
+                    móveis e desktops. Como você se sente ao assumir essa responsabilidade?</label>
+                <select name="devFrontEnd1" class="devFrontEnd" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-dados-pessoais')"
+                        class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta2')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta2">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devFrontEnd2">O site em que você está trabalhando está com problemas de desempenho,
+                    especialmente em dispositivos móveis mais lentos. Seu papel é identificar os gargalos de performance
+                    e aplicar técnicas como minificação de CSS/JS, lazy loading de imagens, e uso de cache para melhorar
+                    o tempo de carregamento da página. O que você acha de lidar com esse tipo de desafio
+                    técnico?</label>
+                <select name="devFrontEnd2" class="devFrontEnd" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta1')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta3')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta3">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devFrontEnd3">Você gosta de criar interfaces que sejam visualmente atraentes e intuitivas
+                    para os usuários? Imagine que você precise desenvolver um menu de navegação que funcione
+                    perfeitamente em celulares e desktops. Como você se sente ao projetar e testar esse tipo de
+                    interface?</label>
+                <select name="devFrontEnd3" class="devFrontEnd" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta2')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta4')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta4">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devBackEnd1">Imagine que você precisa configurar e gerenciar um banco de dados para um site
+                    de
+                    e-commerce. Você precisará garantir que os dados sejam armazenados de forma eficiente, segura e
+                    possam
+                    ser recuperados rapidamente. Como você se sentiria ao trabalhar com tecnologias como MySQL ou
+                    MongoDB?</label>
+                <select name="devBackEnd1" class="devBackEnd" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta3')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta5')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta5">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devBackEnd2">Imagine que você precisa otimizar o desempenho de um sistema, identificando
+                    gargalos no código ou consultas de banco de dados lentas. Você se sente animado com a ideia de
+                    depurar
+                    código e usar ferramentas de monitoramento de performance?</label>
+                <select name="devBackEnd2" class="devBackEnd" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta4')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta6')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta6">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devBackEnd3">Se você fosse encarregado de implementar medidas de segurança robustas para
+                    proteger dados sensíveis em um aplicativo web, como você se sentiria ao lidar com criptografia e
+                    autenticação avançada?</label>
+                <select name="devBackEnd3" class="devBackEnd" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta5')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta7')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta7">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devFullStack1">Você está encarregado de implementar uma nova funcionalidade em um sistema
+                    que envolve tanto a lógica de backend quanto a interface do usuário no frontend. Como você se sente
+                    ao projetar a arquitetura da solução e garantir que ela funcione harmoniosamente em ambas as
+                    camadas?</label>
+                <select name="devFullStack1" class="devFullStack" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta6')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta8')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta8">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devFullStack2">Você está trabalhando em um time onde é necessário colaborar estreitamente
+                    com outros desenvolvedores que se concentram apenas no frontend ou no backend. Como você se sente ao
+                    lidar com a comunicação e a coordenação entre diferentes especialidades para garantir a coesão da
+                    aplicação?</label>
+                <select name="devFullStack2" class="devFullStack" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta7')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta9')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta9">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devFullStack3">Você está criando um site e precisa fazer com que o formulário de contato
+                    envie dados para o servidor. Como você se sente em relação a aprender como fazer essa integração e
+                    garantir que as informações sejam enviadas corretamente?</label>
+                <select name="devFullStack3" class="devFullStack" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta8')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta10')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta10">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="gameDev1">Você está trabalhando em um jogo e precisa programar uma mecânica complexa, como
+                    um sistema de combate em tempo real. Como você se sente sobre escrever e testar o código necessário
+                    para implementar e ajustar essa mecânica?</label>
+                <select name="gameDev1" class="gameDev" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta9')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta11')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta11">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="gameDev2">Você precisa integrar novos recursos gráficos e sonoros no jogo, como animações e
+                    efeitos sonoros. Como você se sente sobre garantir que todos os recursos funcionem corretamente
+                    dentro do ambiente do jogo e não causem problemas de desempenho?</label>
+                <select name="gameDev2" class="gameDev" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta10')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta12')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta12">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="gameDev3">Você percebe que o desempenho do jogo está abaixo do esperado em algumas
+                    plataformas. Como você se sente sobre analisar e otimizar o código para melhorar a performance sem
+                    comprometer a qualidade do jogo?</label>
+                <select name="gameDev3" class="gameDev" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta11')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta13')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta13">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="gameDesigner1">Você está projetando um novo jogo e precisa criar uma mecânica de jogo
+                    envolvente, como um sistema de progressão ou uma mecânica de combate única. Como você se sente sobre
+                    pensar em como essas mecânicas funcionarão e como elas afetarão a experiência do jogador?</label>
+                <select name="gameDesigner1" class="gameDesigner" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta12')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta14')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta14">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="gameDesigner2">Você está projetando níveis para um jogo, incluindo a colocação de obstáculos
+                    e recompensas. Como você se sente sobre criar um design que seja desafiador e divertido para os
+                    jogadores, enquanto garante que seja equilibrado e justo?</label>
+                <select name="gameDesigner2" class="gameDesigner" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta13')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta15')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta15">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="gameDesigner3">Você está colaborando com uma equipe de artistas e programadores para criar
+                    um novo jogo. Como você se sente sobre trabalhar em conjunto para garantir que a visão do jogo seja
+                    realizada de maneira coesa e que todos os aspectos do jogo funcionem bem juntos?</label>
+                <select name="gameDesigner3" class="gameDesigner" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta14')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta16')" class="btn-form">
+                </div>
+            </section>
+
+
+            <section class="section section-perguntas" id="section-pergunta16">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="dataScientist1">Você está trabalhando em um projeto que envolve a análise de grandes volumes
+                    de dados para identificar tendências de mercado. Como você se sente sobre a tarefa de limpar e
+                    preparar os dados antes de realizar a análise?</label>
+                <select name="dataScientist1" class="dataScientist" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta15')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta17')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta17">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="dataScientist2">Você está desenvolvendo um modelo preditivo para prever a demanda de
+                    produtos com base em dados históricos. Como você se sente em relação à tarefa de ajustar e otimizar
+                    o modelo para melhorar a precisão das previsões?</label>
+                <select name="dataScientist2" class="dataScientist" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta16')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta18')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta18">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="dataScientist3">Você está criando visualizações de dados para apresentar insights de uma
+                    análise complexa para a equipe de gestão. Como você se sente sobre a tarefa de traduzir dados
+                    complexos em visualizações claras e compreensíveis?</label>
+                <select name="dataScientist3" class="dataScientist" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta17')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta19')" class="btn-form">
+                </div>
+            </section>
+
+
+
+            <section class="section section-perguntas" id="section-pergunta19">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="dataEngineer1">Você está colaborando com uma equipe para criar uma estratégia de
+                    armazenamento de dados que atenda às necessidades da empresa. Como você se sente sobre a tarefa de
+                    trabalhar em equipe para definir quais dados devem ser armazenados e como organizá-los?</label>
+                <select name="dataEngineer1" class="dataEngineer" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta18')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta20')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta20">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="dataEngineer2">Você está revisando as políticas de acesso a dados para garantir que apenas
+                    as pessoas certas tenham acesso às informações confidenciais. Como você se sente sobre a
+                    responsabilidade de garantir a segurança e a privacidade dos dados?</label>
+                <select name="dataEngineer2" class="dataEngineer" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta19')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta21')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta21">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="dataEngineer3">Você está planejando uma reunião para discutir como os dados coletados podem
+                    ser utilizados para melhorar as operações da empresa. Como você se sente sobre a tarefa de comunicar
+                    ideias e recomendações baseadas em dados para uma audiência não técnica?</label>
+                <select name="dataEngineer3" class="dataEngineer" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta20')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta22')" class="btn-form">
+                </div>
+            </section>
+
+
+            <section class="section section-perguntas" id="section-pergunta22">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="mobileDev1">Você está colaborando na criação de um aplicativo móvel e precisa trabalhar com
+                    a equipe para definir as funcionalidades e a experiência do usuário. Como você se sente sobre a
+                    tarefa de contribuir para a definição e a melhoria da experiência do usuário no aplicativo?</label>
+                <select name="mobileDev1" class="mobileDev" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta21')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta23')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta23">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="mobileDev2">Você está testando um novo recurso em um aplicativo móvel e precisa garantir que
+                    ele funcione bem em diferentes dispositivos e sistemas operacionais. Como você se sente sobre a
+                    tarefa de testar e ajustar o aplicativo para garantir que ele seja compatível com diversas
+                    plataformas?</label>
+                <select name="mobileDev2" class="mobileDev" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta22')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta24')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta24">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="mobileDev3">Você está atualizando um aplicativo existente com novos recursos e precisa se
+                    certificar de que as atualizações não afetem a funcionalidade existente. Como você se sente sobre a
+                    tarefa de gerenciar atualizações e garantir que o aplicativo continue funcionando bem após
+                    mudanças?</label>
+                <select name="mobileDev3" class="mobileDev" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta23')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta25')" class="btn-form">
+                </div>
+            </section>
+
+
+
+
+            <section class="section section-perguntas" id="section-pergunta25">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="uxuiDesign1">Você está colaborando na criação de um novo design para um website e precisa
+                    garantir
+                    que o design seja atraente e fácil de usar para os visitantes. Como você se sente sobre a tarefa de
+                    criar e
+                    ajustar a interface para melhorar a experiência do usuário?</label>
+                <select name="uxuiDesign1" class="uxuiDesign" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta24')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta26')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta26">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="uxuiDesign2">Você está conduzindo uma pesquisa de usuários para entender suas necessidades e
+                    preferências em relação a um aplicativo. Como você se sente sobre a tarefa de coletar e analisar
+                    feedback
+                    dos usuários para melhorar o design?</label>
+                <select name="uxuiDesign2" class="uxuiDesign" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta25')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta27')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta27">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="uxuiDesign3">Você está participando de uma sessão de brainstorming para criar novas ideias
+                    de design
+                    para um projeto. Como você se sente sobre a tarefa de colaborar com outras pessoas para gerar e
+                    refinar
+                    ideias criativas?</label>
+                <select name="uxuiDesign3" class="uxuiDesign" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta26')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta28')" class="btn-form">
+                </div>
+            </section>
+
+
+            <section class="section section-perguntas" id="section-pergunta28">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="infoSecurity1">Você está trabalhando em um projeto onde é crucial proteger informações
+                    sensíveis
+                    contra vazamentos e ataques. Como você se sente sobre a tarefa de implementar medidas de segurança
+                    para
+                    proteger esses dados?</label>
+                <select name="infoSecurity1" class="infoSecurity" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta27')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta29')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta29">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="infoSecurity2">Você está ajudando a revisar políticas de segurança para garantir que estejam
+                    atualizadas e eficazes. Como você se sente sobre a tarefa de revisar e atualizar regulamentos e
+                    práticas de
+                    segurança?</label>
+                <select name="infoSecurity2" class="infoSecurity" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta28')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta30')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section section-perguntas" id="section-pergunta30">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="infoSecurity3">Você está treinando uma equipe sobre melhores práticas de segurança da
+                    informação e
+                    como identificar ameaças comuns. Como você se sente sobre a tarefa de educar outros sobre segurança
+                    e
+                    proteção de dados?</label>
+                <select name="infoSecurity3" class="infoSecurity" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                <input type="button" value="Voltar" onclick="nextSection('section-pergunta29')" class="btn-form">
+                <input type="button" value="Continuar" onclick="nextSection('section-pergunta31')" class="btn-form">
+                </div>
+            </section>
+    
+
+
+
+    <section class="section section-perguntas" id="section-pergunta31">
+        <h2>Dia a Dia no Trabalho</h2>
+        <label for="devOps1">Você está aprendendo a usar ferramentas para automatizar tarefas de desenvolvimento, como
+            testes e implantação. Como você se sente sobre a ideia de usar essas ferramentas para facilitar o trabalho e
+            garantir que tudo funcione corretamente?</label>
+        <select name="devOps1" class="devOps" required>
+            <option value="" disabled selected hidden>Selecione uma opção</option>
+            <option value="100">Nossa, que trabalho incrível!</option>
+            <option value="75">Parece ser legal!</option>
+            <option value="50">Ainda não tenho opinião formada.</option>
+            <option value="25">Não parece ser pra mim.</option>
+            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+        </select>
+        <div class="button-container">
+            <input type="button" value="Voltar" onclick="nextSection('section-pergunta30')" class="btn-form">
+            <input type="button" value="Continuar" onclick="nextSection('section-pergunta32')" class="btn-form">
+        </div>
+    </section>
+
+    <section class="section section-perguntas" id="section-pergunta32">
+        <h2>Dia a Dia no Trabalho</h2>
+        <label for="devOps2">Você está configurando e gerenciando a infraestrutura em nuvem para suportar uma aplicação
+            escalável. Como você se sente sobre a tarefa de monitorar e ajustar recursos para garantir que a aplicação
+            funcione de maneira eficiente e econômica?</label>
+        <select name="devOps2" class="devOps" required>
+            <option value="" disabled selected hidden>Selecione uma opção</option>
+            <option value="100">Nossa, que trabalho incrível!</option>
+            <option value="75">Parece ser legal!</option>
+            <option value="50">Ainda não tenho opinião formada.</option>
+            <option value="25">Não parece ser pra mim.</option>
+            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+        </select>
+        <div class="button-container">
+            <input type="button" value="Voltar" onclick="nextSection('section-pergunta31')" class="btn-form">
+            <input type="button" value="Continuar" onclick="nextSection('section-pergunta33')" class="btn-form">
+        </div>
+    </section>
+
+    <section class="section section-perguntas" id="section-pergunta33">
+        <h2>Dia a Dia no Trabalho</h2>
+        <label for="devOps3">Você está colaborando com uma equipe para resolver problemas de desempenho em um ambiente
+            de produção e implementar estratégias para prevenir futuras falhas. Como você se sente sobre a tarefa de
+            identificar e corrigir problemas críticos para manter a estabilidade e a performance do sistema?</label>
+        <select name="devOps3" class="devOps" required>
+            <option value="" disabled selected hidden>Selecione uma opção</option>
+            <option value="100">Nossa, que trabalho incrível!</option>
+            <option value="75">Parece ser legal!</option>
+            <option value="50">Ainda não tenho opinião formada.</option>
+            <option value="25">Não parece ser pra mim.</option>
+            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+        </select>
+        <div class="button-container">
+            <input type="button" value="Voltar" onclick="nextSection('section-pergunta32')" class="btn-form">
+            <input type="button" value="Continuar" onclick="nextSection('section-pergunta34')" class="btn-form">
+        </div>
+    </section>
+
+    <section class="section section-perguntas" id="section-pergunta34">
+        <h2>Dia a Dia no Trabalho</h2>
+        <label for="aiMl1">Imagine que você está ajudando a criar um sistema que aprende com os dados que recebe para
+            fazer previsões sobre tendências futuras. Como você se sente sobre a possibilidade de usar a IA para tomar
+            decisões informadas?</label>
+        <select name="aiMl1" class="aiMl" required>
+            <option value="" disabled selected hidden>Selecione uma opção</option>
+            <option value="100">Nossa, que trabalho incrível!</option>
+            <option value="75">Parece ser legal!</option>
+            <option value="50">Ainda não tenho opinião formada.</option>
+            <option value="25">Não parece ser pra mim.</option>
+            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+        </select>
+        <div class="button-container">
+            <input type="button" value="Voltar" onclick="nextSection('section-pergunta33')" class="btn-form">
+            <input type="button" value="Continuar" onclick="nextSection('section-pergunta35')" class="btn-form">
+        </div>
+    </section>
+
+    <section class="section section-perguntas" id="section-pergunta35">
+        <h2>Dia a Dia no Trabalho</h2>
+        <label for="aiMl2">Você vai trabalhar em um projeto onde o objetivo é melhorar a precisão de um modelo que prevê
+            o sucesso de campanhas de marketing. Qual é a sua visão sobre o trabalho de ajustar e testar diferentes
+            abordagens para obter melhores resultados?</label>
+        <select name="aiMl2" class="aiMl" required>
+            <option value="" disabled selected hidden>Selecione uma opção</option>
+            <option value="100">Nossa, que trabalho incrível!</option>
+            <option value="75">Parece ser legal!</option>
+            <option value="50">Ainda não tenho opinião formada.</option>
+            <option value="25">Não parece ser pra mim.</option>
+            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+        </select>
+        <div class="button-container">
+            <input type="button" value="Voltar" onclick="nextSection('section-pergunta34')" class="btn-form">
+            <input type="button" value="Continuar" onclick="nextSection('section-pergunta36')" class="btn-form">
+        </div>
+    </section>
+
+    <section class="section section-perguntas" id="section-pergunta36">
+        <h2>Dia a Dia no Trabalho</h2>
+        <label for="aiMl3">Você está explorando o uso de IA para personalizar a experiência de um aplicativo, como
+            sugerir produtos baseados no comportamento do usuário. O que você acha de usar essas técnicas para criar
+            experiências mais adaptadas e relevantes para os usuários?</label>
+        <select name="aiMl3" class="aiMl" required>
+            <option value="" disabled selected hidden>Selecione uma opção</option>
+            <option value="100">Nossa, que trabalho incrível!</option>
+            <option value="75">Parece ser legal!</option>
+            <option value="50">Ainda não tenho opinião formada.</option>
+            <option value="25">Não parece ser pra mim.</option>
+            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+        </select>
+        <div class="button-container">
+            <input type="button" value="Voltar" onclick="nextSection('section-pergunta35')" class="btn-form">
+            <input type="button" value="Continuar" onclick="nextSection('section-resultados')" class="btn-form">
+        </div>
+    </section>
+    
+    <section class="section" id="section-resultados" style="display: none;">
+        <h2>Resultados Finais</h2>
+        <div id="resultados-container">
+            <!-- Os resultados serãoo inseridos aqui pelo JavaScript -->
+        </div>
+        <div class="button-container">
+            <input type="button" value="Voltar" onclick="nextSection('section-pergunta36')" class="btn-form">
+            <input type="button" value="Buscar Roadmaps" onclick="window.location.href='buscarRoadmaps.html'" class="btn-form">
+        </div>
+    </section>
+    
+    
+
+    </form>
+    </div>
+</body>
+
+</html>

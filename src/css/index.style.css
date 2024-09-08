@@ -1,0 +1,128 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1c1c1c, #282828); /* Fundo gradiente mais dinâmico */
+    color: #e4e4e4;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: #2e2e2e;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 1s ease-in-out, glow 3s ease-in-out infinite alternate; /* Animação de entrada e efeito de brilho */
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+    animation: bounceIn 1s ease-out;
+    text-shadow: 0 0 8px rgba(243, 156, 18, 0.6); /* Sombra de texto luminosa */
+}
+
+.description {
+    font-size: 1.3rem;
+    color: #bdc3c7;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.option {
+    background: #3a3a3a;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    width: 320px;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border 0.3s ease; /* Transições suaves adicionais */
+    color: #ecf0f1;
+    border: 3px solid transparent;
+    animation: fadeInUp 1s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.option::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(52, 152, 219, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    background-color: #444;
+    border-color: #3498db;
+}
+
+.option:hover::before {
+    left: 100%;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.7rem;
+    color: #ecf0f1;
+    text-transform: uppercase; /* Texto em caixa alta para maior impacto */
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1rem;
+    color: #bdc3c7;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 15px rgba(243, 156, 18, 0.6);
+    }
+    to {
+        box-shadow: 0 0 35px rgba(243, 156, 18, 0.9);
+    }
+}

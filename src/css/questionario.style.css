@@ -1,0 +1,229 @@
+/* Reset básico e estilos de corpo */
+body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1c1c1c; 
+    color: #e4e4e4; 
+    overflow-x: hidden; 
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: #2e2e2e; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-in-out; 
+    width: 100%;
+    max-width: 1200px; 
+    box-sizing: border-box; 
+    position: relative;
+}
+
+/* Cabeçalho */
+header {
+    margin-bottom: 20px;
+}
+
+/* Título */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #f39c12; 
+    animation: bounceIn 1s ease-out; 
+}
+
+/* Descrição */
+.description {
+    font-size: 1.3rem;
+    color: #bdc3c7; 
+    margin-bottom: 20px;
+    line-height: 1.6;
+    animation: fadeInUp 1s ease-out; 
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Seções */
+.section {
+    background: #333; 
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 10px 0;
+    color: #ecf0f1; 
+    display: none; 
+    animation: fadeInUp 0.8s ease-in-out; 
+}
+
+/* Estilos específicos para seções de perguntas */
+.section-perguntas label {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff; 
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 1.7rem;
+    color: #ecf0f1; 
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #bdc3c7; 
+}
+
+/* Inputs e selects */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #3498db; 
+    background: #444; 
+    color: #ecf0f1; 
+    font-size: 1rem;
+    margin-bottom: 15px;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #f39c12; 
+    outline: none;
+    box-shadow: 0 0 8px rgba(243, 156, 18, 0.5);
+}
+
+/* Estilos dos botões */
+button,
+input[type="button"] {
+    background: #f39c12; 
+    color: #2e2e2e; 
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px; /* Espaçamento entre botões */
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.3);
+}
+
+button:hover,
+input[type="button"]:hover {
+    background: #e67e22; 
+    transform: translateY(-4px); 
+    box-shadow: 0 6px 12px rgba(243, 156, 18, 0.4);
+}
+
+button:active,
+input[type="button"]:active {
+    background: #d35400; 
+    transform: translateY(0); 
+}
+
+button:disabled,
+input[type="button"]:disabled {
+    background: #7f8c8d; 
+    cursor: not-allowed;
+}
+
+/* Botão do formulário */
+.btn-form {
+    background: #f39c12; 
+    color: #2e2e2e; 
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px;
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.3);
+}
+
+/* Container dos botões */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação para destacar a melhor carreira */
+@keyframes highlight {
+    0% { background-color: #e0f3ff; }
+    50% { background-color: #d0ebff; }
+    100% { background-color: #e0f3ff; }
+}
+
+.best-career {
+    font-weight: bold;
+    color: #1f78d1;
+    background-color: #e0f3ff;
+    border: 2px solid #1f78d1;
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-size: 1.6rem;
+    box-shadow: 0 8px 20px rgba(31, 120, 209, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    animation: highlight 2s ease-in-out infinite;
+    margin-bottom: 20px;
+}
+
+.best-career:hover {
+    background-color: #d0ebff;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(31, 120, 209, 0.5);
+}
