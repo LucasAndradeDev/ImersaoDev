@@ -53,7 +53,7 @@ Bem-vindo ao meu projeto, desenvolvido como parte da Imersão Dev da Alura com o
 - **CSS**: Estilização e layout.
 
 ## 🌐 Acesso
-Para acessar o projeto, basta acessar esse link: https://imersao-dev-alpha-jet.vercel.app/index.html.
+Para visualizar o projeto, basta acessar esse link: https://imersao-dev-alpha-jet.vercel.app/index.html.
 
 ## 🤝 Contribua com o Projeto
 
