@@ -14,12 +14,12 @@ document.getElementById('searchButton').addEventListener('click', function() {
         { title: 'Desenvolvedor Backend Python', file: 'roadmaps/backEnd/backEndPython.roadmap.html' },
         { title: 'Desenvolvedor Backend Ruby', file: 'roadmaps/backEnd/backEndRuby.roadmap.html' },
         // Full Stack
-        { title: 'Desenvolvedor Fullstack Java', file: 'roadmaps/fullStack/fullStackJava.roadmap.html' },
-        { title: 'Desenvolvedor Fullstack Node.js', file: 'roadmaps/fullStack/fullStackNodeJS.roadmap.html' },
-        { title: 'Desenvolvedor Fullstack Php', file: 'roadmaps/fullStack/fullStackPhp.roadmap.html' },
-        { title: 'Desenvolvedor Fullstack C#', file: 'roadmaps/fullStack/fullStackCSharp.roadmap.html' },
-        { title: 'Desenvolvedor Fullstack Python', file: 'roadmaps/fullStack/fullStackPython.roadmap.html' },
-        { title: 'Desenvolvedor Fullstack Ruby', file: 'roadmaps/fullStack/fullStackRuby.roadmap.html' },
+        { title: 'Desenvolvedor Fullstack Java', file: 'roadmaps/fullstack/fullStackJava.roadmap.html' },
+        { title: 'Desenvolvedor Fullstack Node.js', file: 'roadmaps/fullstack/fullStackNodeJS.roadmap.html' },
+        { title: 'Desenvolvedor Fullstack Php', file: 'roadmaps/fullstack/fullStackPhp.roadmap.html' },
+        { title: 'Desenvolvedor Fullstack C#', file: 'roadmaps/fullstack/fullStackCSharp.roadmap.html' },
+        { title: 'Desenvolvedor Fullstack Python', file: 'roadmaps/fullstack/fullStackPython.roadmap.html' },
+        { title: 'Desenvolvedor Fullstack Ruby', file: 'roadmaps/fullstack/fullStackRuby.roadmap.html' },
         // Front-end
         { title: 'Desenvolvedor Frontend', file: 'roadmaps/frontEnd/frontend.roadmap.html' },
         // Desenvolvimento de Games
