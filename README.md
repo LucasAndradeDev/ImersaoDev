@@ -52,8 +52,8 @@ Bem-vindo ao meu projeto, desenvolvido como parte da Imersão Dev da Alura com o
 - **HTML**: Estrutura da página.
 - **CSS**: Estilização e layout.
 
-🌐 Acesso
-Para acessar o projeto, você pode fazer o deploy em plataformas como o Vercel ou Netlify. Essas ferramentas permitem hospedar aplicativos de forma rápida e fácil, sem a necessidade de configurar servidores manualmente.
+## 🌐 Acesso
+Para acessar o projeto, basta acessar esse link: https://imersao-dev-alpha-jet.vercel.app/index.html.
 
 ## 🤝 Contribua com o Projeto
 
