@@ -72,3 +72,14 @@ document.getElementById('searchButton').addEventListener('click', function() {
         resultsContainer.innerHTML = '<p>Nenhum roadmap encontrado.</p>';
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+});

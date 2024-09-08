@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
             results.push({ name: categoryNames[category], percentage });
         });
     
-        
         results.sort((a, b) => b.percentage - a.percentage);
     
         // Gerar HTML para resultados
@@ -105,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         resultadosContainer.innerHTML = resultsHtml;
     
-        // Mostrar a seção de resultados e esconder as outras
+        
         document.getElementById('section-resultados').style.display = 'block';
         sections.forEach(section => {
             if (section.id !== 'section-resultados') {
@@ -113,8 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    
-    // Função para passar para a proxima seção
+
+    // Função para passar para a próxima seção
     function nextSection(nextSectionId) {
         if (!nameIsValid()) {
             alert('Por favor, preencha seu nome.');
@@ -126,12 +125,17 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        if (nextSectionId === 'section-importante') {
+            const nameInput = document.getElementById('nome').value;
+            const importanteTexto = document.getElementById('importante-texto');
+            importanteTexto.textContent = `Atenção, ${nameInput}, é importante que você reserve um tempo, serão cerca de 36 perguntas nesse questionário. Boa sorte!`;
+        }
+
         const nextSectionIndex = Array.from(sections).findIndex(section => section.id === nextSectionId);
         if (nextSectionIndex !== -1) {
             currentSectionIndex = nextSectionIndex;
             showSection(currentSectionIndex);
 
-            
             if (nextSectionId === 'section-resultados') {
                 showResults();
             }

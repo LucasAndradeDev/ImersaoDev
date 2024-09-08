@@ -6,8 +6,38 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #1c1c1c, #282828); /* Fundo gradiente mais dinâmico */
+    background: linear-gradient(135deg, #1c1c1c, #282828); 
     color: #e4e4e4;
+    overflow: hidden; 
+    position: relative; 
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(52, 152, 219, 0.15), transparent 60%),
+                radial-gradient(circle, rgba(243, 156, 18, 0.15), transparent 60%);
+    background-size: 50% 50%;
+    animation: moveGradient 15s ease-in-out infinite; 
+    z-index: 0; 
+    pointer-events: none; 
+}
+
+@keyframes moveGradient {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-10%, -10%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .container {
@@ -16,9 +46,31 @@ body {
     border-radius: 20px;
     background: #2e2e2e;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-    animation: fadeIn 1s ease-in-out, glow 3s ease-in-out infinite alternate; /* Animação de entrada e efeito de brilho */
+    animation: fadeIn 1s ease-in-out, glow 3s ease-in-out infinite alternate; 
     max-width: 500px;
+    position: relative; 
+    z-index: 1; 
 }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 15px rgba(243, 156, 18, 0.6);
+    }
+    to {
+        box-shadow: 0 0 35px rgba(243, 156, 18, 0.9);
+    }
+}
+
 
 h1 {
     font-size: 2.8rem;
@@ -77,7 +129,7 @@ h2 {
     margin: 0;
     font-size: 1.7rem;
     color: #ecf0f1;
-    text-transform: uppercase; /* Texto em caixa alta para maior impacto */
+    text-transform: uppercase; 
     letter-spacing: 1px;
 }
 
@@ -124,5 +176,38 @@ p {
     }
     to {
         box-shadow: 0 0 35px rgba(243, 156, 18, 0.9);
+    }
+}
+
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; 
+        max-width: 80%; 
+
+    }
+
+    h1 {
+        font-size: 2.1rem; 
+    }
+
+    
+    .description {
+        font-size: 1.2rem; 
+        margin-bottom: 10px;
+    }
+
+    .option {
+        padding: 10px; 
+        max-width: 100%; 
+    }
+
+    h2 {
+        font-size: 1.6rem; 
+    }
+
+    p {
+        font-size: 0.8rem; 
     }
 }

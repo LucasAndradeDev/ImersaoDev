@@ -22,7 +22,19 @@
                 <h2>Dados Pessoais</h2>
                 <label for="nome">Qual é o seu nome?</label>
                 <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-                <input type="button" value="Continuar" onclick="nextSection('section-pergunta1')" class="btn-form">
+                <input type="button" value="Continuar" onclick="nextSection('section-importante')" class="btn-form">
+            </section>
+            <!-- Seção Importante -->
+            <section class="section" id="section-importante">
+                <h2>IMPORTANTE</h2>
+                <p id="importante-texto">Atenção, é importante que você reserve um tempo, serão cerca de 36 perguntas
+                    nesse questionário. Boa sorte!</p>
+                <div class="button-container">
+                    <input type="button" value="Voltar ao menu" onclick="window.location.href='index.html'"
+                        class="btn-form">
+                    <input type="button" value="Iniciar Questionário" onclick="nextSection('section-pergunta1')"
+                        class="btn-form">
+                </div>
             </section>
 
             <!-- Perguntas sobre Carreiras -->
@@ -622,142 +634,156 @@
                     <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
                 </select>
                 <div class="button-container">
-                <input type="button" value="Voltar" onclick="nextSection('section-pergunta29')" class="btn-form">
-                <input type="button" value="Continuar" onclick="nextSection('section-pergunta31')" class="btn-form">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta29')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta31')" class="btn-form">
                 </div>
             </section>
-    
 
 
 
-    <section class="section section-perguntas" id="section-pergunta31">
-        <h2>Dia a Dia no Trabalho</h2>
-        <label for="devOps1">Você está aprendendo a usar ferramentas para automatizar tarefas de desenvolvimento, como
-            testes e implantação. Como você se sente sobre a ideia de usar essas ferramentas para facilitar o trabalho e
-            garantir que tudo funcione corretamente?</label>
-        <select name="devOps1" class="devOps" required>
-            <option value="" disabled selected hidden>Selecione uma opção</option>
-            <option value="100">Nossa, que trabalho incrível!</option>
-            <option value="75">Parece ser legal!</option>
-            <option value="50">Ainda não tenho opinião formada.</option>
-            <option value="25">Não parece ser pra mim.</option>
-            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
-        </select>
-        <div class="button-container">
-            <input type="button" value="Voltar" onclick="nextSection('section-pergunta30')" class="btn-form">
-            <input type="button" value="Continuar" onclick="nextSection('section-pergunta32')" class="btn-form">
-        </div>
-    </section>
 
-    <section class="section section-perguntas" id="section-pergunta32">
-        <h2>Dia a Dia no Trabalho</h2>
-        <label for="devOps2">Você está configurando e gerenciando a infraestrutura em nuvem para suportar uma aplicação
-            escalável. Como você se sente sobre a tarefa de monitorar e ajustar recursos para garantir que a aplicação
-            funcione de maneira eficiente e econômica?</label>
-        <select name="devOps2" class="devOps" required>
-            <option value="" disabled selected hidden>Selecione uma opção</option>
-            <option value="100">Nossa, que trabalho incrível!</option>
-            <option value="75">Parece ser legal!</option>
-            <option value="50">Ainda não tenho opinião formada.</option>
-            <option value="25">Não parece ser pra mim.</option>
-            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
-        </select>
-        <div class="button-container">
-            <input type="button" value="Voltar" onclick="nextSection('section-pergunta31')" class="btn-form">
-            <input type="button" value="Continuar" onclick="nextSection('section-pergunta33')" class="btn-form">
-        </div>
-    </section>
+            <section class="section section-perguntas" id="section-pergunta31">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devOps1">Você está aprendendo a usar ferramentas para automatizar tarefas de
+                    desenvolvimento, como
+                    testes e implantação. Como você se sente sobre a ideia de usar essas ferramentas para facilitar o
+                    trabalho e
+                    garantir que tudo funcione corretamente?</label>
+                <select name="devOps1" class="devOps" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta30')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta32')" class="btn-form">
+                </div>
+            </section>
 
-    <section class="section section-perguntas" id="section-pergunta33">
-        <h2>Dia a Dia no Trabalho</h2>
-        <label for="devOps3">Você está colaborando com uma equipe para resolver problemas de desempenho em um ambiente
-            de produção e implementar estratégias para prevenir futuras falhas. Como você se sente sobre a tarefa de
-            identificar e corrigir problemas críticos para manter a estabilidade e a performance do sistema?</label>
-        <select name="devOps3" class="devOps" required>
-            <option value="" disabled selected hidden>Selecione uma opção</option>
-            <option value="100">Nossa, que trabalho incrível!</option>
-            <option value="75">Parece ser legal!</option>
-            <option value="50">Ainda não tenho opinião formada.</option>
-            <option value="25">Não parece ser pra mim.</option>
-            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
-        </select>
-        <div class="button-container">
-            <input type="button" value="Voltar" onclick="nextSection('section-pergunta32')" class="btn-form">
-            <input type="button" value="Continuar" onclick="nextSection('section-pergunta34')" class="btn-form">
-        </div>
-    </section>
+            <section class="section section-perguntas" id="section-pergunta32">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devOps2">Você está configurando e gerenciando a infraestrutura em nuvem para suportar uma
+                    aplicação
+                    escalável. Como você se sente sobre a tarefa de monitorar e ajustar recursos para garantir que a
+                    aplicação
+                    funcione de maneira eficiente e econômica?</label>
+                <select name="devOps2" class="devOps" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta31')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta33')" class="btn-form">
+                </div>
+            </section>
 
-    <section class="section section-perguntas" id="section-pergunta34">
-        <h2>Dia a Dia no Trabalho</h2>
-        <label for="aiMl1">Imagine que você está ajudando a criar um sistema que aprende com os dados que recebe para
-            fazer previsões sobre tendências futuras. Como você se sente sobre a possibilidade de usar a IA para tomar
-            decisões informadas?</label>
-        <select name="aiMl1" class="aiMl" required>
-            <option value="" disabled selected hidden>Selecione uma opção</option>
-            <option value="100">Nossa, que trabalho incrível!</option>
-            <option value="75">Parece ser legal!</option>
-            <option value="50">Ainda não tenho opinião formada.</option>
-            <option value="25">Não parece ser pra mim.</option>
-            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
-        </select>
-        <div class="button-container">
-            <input type="button" value="Voltar" onclick="nextSection('section-pergunta33')" class="btn-form">
-            <input type="button" value="Continuar" onclick="nextSection('section-pergunta35')" class="btn-form">
-        </div>
-    </section>
+            <section class="section section-perguntas" id="section-pergunta33">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="devOps3">Você está colaborando com uma equipe para resolver problemas de desempenho em um
+                    ambiente
+                    de produção e implementar estratégias para prevenir futuras falhas. Como você se sente sobre a
+                    tarefa de
+                    identificar e corrigir problemas críticos para manter a estabilidade e a performance do
+                    sistema?</label>
+                <select name="devOps3" class="devOps" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta32')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta34')" class="btn-form">
+                </div>
+            </section>
 
-    <section class="section section-perguntas" id="section-pergunta35">
-        <h2>Dia a Dia no Trabalho</h2>
-        <label for="aiMl2">Você vai trabalhar em um projeto onde o objetivo é melhorar a precisão de um modelo que prevê
-            o sucesso de campanhas de marketing. Qual é a sua visão sobre o trabalho de ajustar e testar diferentes
-            abordagens para obter melhores resultados?</label>
-        <select name="aiMl2" class="aiMl" required>
-            <option value="" disabled selected hidden>Selecione uma opção</option>
-            <option value="100">Nossa, que trabalho incrível!</option>
-            <option value="75">Parece ser legal!</option>
-            <option value="50">Ainda não tenho opinião formada.</option>
-            <option value="25">Não parece ser pra mim.</option>
-            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
-        </select>
-        <div class="button-container">
-            <input type="button" value="Voltar" onclick="nextSection('section-pergunta34')" class="btn-form">
-            <input type="button" value="Continuar" onclick="nextSection('section-pergunta36')" class="btn-form">
-        </div>
-    </section>
+            <section class="section section-perguntas" id="section-pergunta34">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="aiMl1">Imagine que você está ajudando a criar um sistema que aprende com os dados que recebe
+                    para
+                    fazer previsões sobre tendências futuras. Como você se sente sobre a possibilidade de usar a IA para
+                    tomar
+                    decisões informadas?</label>
+                <select name="aiMl1" class="aiMl" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta33')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta35')" class="btn-form">
+                </div>
+            </section>
 
-    <section class="section section-perguntas" id="section-pergunta36">
-        <h2>Dia a Dia no Trabalho</h2>
-        <label for="aiMl3">Você está explorando o uso de IA para personalizar a experiência de um aplicativo, como
-            sugerir produtos baseados no comportamento do usuário. O que você acha de usar essas técnicas para criar
-            experiências mais adaptadas e relevantes para os usuários?</label>
-        <select name="aiMl3" class="aiMl" required>
-            <option value="" disabled selected hidden>Selecione uma opção</option>
-            <option value="100">Nossa, que trabalho incrível!</option>
-            <option value="75">Parece ser legal!</option>
-            <option value="50">Ainda não tenho opinião formada.</option>
-            <option value="25">Não parece ser pra mim.</option>
-            <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
-        </select>
-        <div class="button-container">
-            <input type="button" value="Voltar" onclick="nextSection('section-pergunta35')" class="btn-form">
-            <input type="button" value="Continuar" onclick="nextSection('section-resultados')" class="btn-form">
-        </div>
-    </section>
-    
-    <section class="section" id="section-resultados" style="display: none;">
-        <h2>Resultados Finais</h2>
-        <div id="resultados-container">
-            <!-- Os resultados serãoo inseridos aqui pelo JavaScript -->
-        </div>
-        <div class="button-container">
-            <input type="button" value="Voltar" onclick="nextSection('section-pergunta36')" class="btn-form">
-            <input type="button" value="Buscar Roadmaps" onclick="window.location.href='buscarRoadmaps.html'" class="btn-form">
-        </div>
-    </section>
-    
-    
+            <section class="section section-perguntas" id="section-pergunta35">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="aiMl2">Você vai trabalhar em um projeto onde o objetivo é melhorar a precisão de um modelo
+                    que prevê
+                    o sucesso de campanhas de marketing. Qual é a sua visão sobre o trabalho de ajustar e testar
+                    diferentes
+                    abordagens para obter melhores resultados?</label>
+                <select name="aiMl2" class="aiMl" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta34')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-pergunta36')" class="btn-form">
+                </div>
+            </section>
 
-    </form>
+            <section class="section section-perguntas" id="section-pergunta36">
+                <h2>Dia a Dia no Trabalho</h2>
+                <label for="aiMl3">Você está explorando o uso de IA para personalizar a experiência de um aplicativo,
+                    como
+                    sugerir produtos baseados no comportamento do usuário. O que você acha de usar essas técnicas para
+                    criar
+                    experiências mais adaptadas e relevantes para os usuários?</label>
+                <select name="aiMl3" class="aiMl" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="100">Nossa, que trabalho incrível!</option>
+                    <option value="75">Parece ser legal!</option>
+                    <option value="50">Ainda não tenho opinião formada.</option>
+                    <option value="25">Não parece ser pra mim.</option>
+                    <option value="0">Eu definitivamente não me vejo trabalhando com isso.</option>
+                </select>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta35')" class="btn-form">
+                    <input type="button" value="Continuar" onclick="nextSection('section-resultados')" class="btn-form">
+                </div>
+            </section>
+
+            <section class="section" id="section-resultados" style="display: none;">
+                <h2>Resultados Finais</h2>
+                <div id="resultados-container">
+                    <!-- Os resultados serãoo inseridos aqui pelo JavaScript -->
+                </div>
+                <div class="button-container">
+                    <input type="button" value="Voltar" onclick="nextSection('section-pergunta36')" class="btn-form">
+                    <input type="button" value="Buscar Roadmaps" onclick="window.location.href='buscarRoadmaps.html'"
+                        class="btn-form">
+                </div>
+            </section>
+
+
+
+        </form>
     </div>
 </body>
 

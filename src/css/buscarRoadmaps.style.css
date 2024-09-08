@@ -19,6 +19,9 @@ header {
     left: 0;
     z-index: 1000;
     transition: background 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* Título no cabeçalho */
@@ -31,6 +34,17 @@ header h1 {
 /* Navegação */
 nav {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    animation: fadeIn 0.6s ease-out;
+    position: relative;
+    right: 1.6rem;
+}
+
+h1{
+    position: relative;
+    right: 1.6rem;
 }
 
 nav a {
@@ -48,8 +62,7 @@ nav a:hover {
 
 /* Espaçamento para o main */
 main {
-    padding: 120px 20px 20px; /* Ajuste o padding-top para acomodar o header */
-    margin-left: 30px; /* Adiciona um deslocamento à esquerda para alinhar com o header */
+    padding: 130px 0px;
 }
 
 /* Container de busca */
@@ -60,12 +73,13 @@ main {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
     text-align: center;
+    padding: 20px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    position: relative;
     animation: fadeIn 0.6s ease-out;
+    width: 100%;
 }
 
 /* Título no container de busca */
@@ -175,4 +189,99 @@ main {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Estilos para o Botão Hamburger */
+.hamburger {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    left: 15px;  
+    top: 30px;
+    z-index: 1100; 
+}
+
+.hamburger-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #e4e4e4;
+    transition: all 0.3s ease;
+}
+
+/* Mostrar o menu hamburger em telas pequenas */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    nav {
+        display: none; 
+        flex-direction: column;
+        gap: 1rem;
+        background: #1e1e1e;
+        position: absolute;
+        top: 70px; 
+        left: 0;  
+        text-align: left;  
+        padding: 20px 0;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);  
+        animation: slideIn 0.4s ease forwards; 
+    }
+    
+    nav.active {
+        display: flex; 
+    }
+
+    nav a {
+        margin: 10px 20px;  
+    }
+
+    main{
+        padding-top: 85px;	
+    }
+
+    #searchInput{
+        width: 80%; 
+    }
+
+    .search-container{
+        margin-bottom: 2px;
+    }
+
+/* Animações do Botão Hamburger */
+.hamburger.active .hamburger-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .hamburger-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Animação para o menu slide in */
+@keyframes slideIn {
+    from {
+        left: -100%; 
+    }
+    to {
+        left: 0; 
+    }
+}
+
+/* Animação para o menu slide out */
+@keyframes slideOut {
+    from {
+        left: 0; 
+    }
+    to {
+        left: -100%; 
+    }
+}
 }

@@ -227,3 +227,80 @@ input[type="button"]:disabled {
     transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(31, 120, 209, 0.5);
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    
+    .container {
+        padding: 15px; 
+        max-width: 100%; 
+    }
+
+    
+    h1 {
+        font-size: 2.2rem; 
+        margin-bottom: 10px;
+    }
+
+    
+    .description {
+        font-size: 1.1rem; 
+        margin-bottom: 15px;
+    }
+
+    
+    form {
+        gap: 15px; /
+    }
+
+   
+    .section {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    
+    label {
+        font-size: 1rem; 
+    }
+
+    
+    input[type="text"],
+    select {
+        padding: 12px; 
+        font-size: 1rem; 
+        margin-bottom: 15px;
+        border-radius: 8px; 
+        box-sizing: border-box;
+    }
+
+ 
+    select {
+        -webkit-appearance: none; 
+        -moz-appearance: none; 
+        appearance: none; 
+        background: #444 url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3E%3Cpath d="M7 10l5 5 5-5z" fill="%23ecf0f1"/%3E%3C/svg>') no-repeat right 10px center; 
+        background-size: 24px;
+    }
+
+
+   
+    button,
+    input[type="button"] {
+        padding: 10px 20px;
+        font-size: 0.9rem; 
+        margin: 5px;
+    }
+
+  
+    .btn-form {
+        padding: 10px 20px;
+        font-size: 1rem; 
+    }
+
+   
+    .button-container {
+        flex-direction: row; 
+        gap: 10px; 
+    }
+}
