@@ -1,12 +1,4 @@
-Para adicionar imagens no README.md, você pode usar a sintaxe Markdown padrão. A sintaxe correta para adicionar uma imagem é:
 
-```markdown
-![Texto alternativo](URL da imagem)
-```
-
-Aqui está como ficaria o seu README com as imagens corretamente formatadas:
-
----
 
 # 🚀 Imersão Alura com Google Gemini
 
@@ -74,6 +66,3 @@ Tem dúvidas ou sugestões? Fique à vontade para entrar em contato!
 - **Email**: [jardellucas@gmail.com](mailto:jardellucas@gmail.com) 📧
 - **LinkedIn**: [Lucas Andrade](https://www.linkedin.com/in/lucas-andrade-6a03331b2/) 🌐
 
----
-
-Com esta sintaxe, as imagens serão exibidas corretamente em seu README.md. Certifique-se de que as URLs das imagens estejam acessíveis publicamente.
