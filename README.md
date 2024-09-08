@@ -23,11 +23,15 @@ Bem-vindo ao meu projeto, desenvolvido como parte da Imersão Dev da Alura com o
    - Se você é iniciante, faça o questionário.
    - Se já tem alguma experiência, utilize o buscador de roadmaps.
     
-   ![Tela Inicial](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/9a65862b-6b6d-4bed-b7e2-b1de2430fdcd/Captura_de_Tela_(11).png)
+   <div align="center">
+   <img src="https://github.com/user-attachments/assets/e7b4f674-7a20-4a0c-84d5-821a9633a1ec" width="600px" />
+   </div>
     
 2. **Faça o Questionário**: O questionário cobre diversas carreiras e ajudará você a se identificar com a que mais se adequa aos seus interesses.
     
-   ![Questionário](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/2b093b2f-5847-43ec-a291-7a35ccdfa95e/Captura_de_Tela_(12).png)
+   <div align="center">
+   <img src="https://github.com/user-attachments/assets/6e4e9155-869d-4093-8c9b-05f6b5dab9d9" width="600px" />
+   </div>
     
 3. **Busque Roadmaps**: Se você já tem uma ideia do que deseja seguir, mas ainda está um pouco perdido, utilize o buscador de roadmaps. Há muitos disponíveis, e novos estão a caminho.
 
@@ -37,7 +41,9 @@ Bem-vindo ao meu projeto, desenvolvido como parte da Imersão Dev da Alura com o
     
 4. **Dentro do Roadmap**: Cada roadmap possui um nível de detalhamento único, oferecendo informações valiosas para seu planejamento de carreira.
     
-   ![Detalhamento do Roadmap](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/43f1a4f6-4794-4f39-b3e3-463c54527ea2/Captura_de_Tela_(14).png)
+   <div align="center">
+   <img src="https://github.com/user-attachments/assets/726955d2-7699-4940-8a25-4554bc170b0b" width="600px" />
+   </div>
     
 
 ## 🛠️ Tecnologias Utilizadas
