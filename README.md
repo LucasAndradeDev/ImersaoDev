@@ -29,8 +29,11 @@ Bem-vindo ao meu projeto, desenvolvido como parte da Imersão Dev da Alura com o
     ![Questionário](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/2b093b2f-5847-43ec-a291-7a35ccdfa95e/Captura_de_Tela_(12).png)
     
 3. **Busque Roadmaps**: Se você já tem uma ideia do que deseja seguir, mas ainda está um pouco perdido, utilize o buscador de roadmaps. Há muitos disponíveis, e novos estão a caminho.
-    
-    ![Buscador de Roadmaps](https://prod-files-secure.s3.us-west-2.amazonaws.com/7fb7a7ce-e0ed-43a0-814b-61983fe9c81d/775d7ed2-746b-4e13-ad84-bddc0dcee7b5/Captura_de_Tela_(13).png)
+
+    div align="center"
+img src="https://github.com/user-attachments/assets/2ef69c22-6d13-4a3f-9cab-11979fb833f8" width="0px" /
+/div
+
     
 4. **Dentro do Roadmap**: Cada roadmap possui um nível de detalhamento único, oferecendo informações valiosas para seu planejamento de carreira.
     
