@@ -52,9 +52,8 @@ Bem-vindo ao meu projeto, desenvolvido como parte da Imersão Dev da Alura com o
 - **HTML**: Estrutura da página.
 - **CSS**: Estilização e layout.
 
-## 🌐 Acesso
-
-Experimente a aplicação [aqui](#) e descubra como ela pode ajudar você a definir sua trajetória em TI!
+🌐 Acesso
+Para acessar o projeto, você pode fazer o deploy em plataformas como o Vercel ou Netlify. Essas ferramentas permitem hospedar aplicativos de forma rápida e fácil, sem a necessidade de configurar servidores manualmente.
 
 ## 🤝 Contribua com o Projeto
 
