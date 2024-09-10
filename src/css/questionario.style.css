@@ -228,6 +228,23 @@ input[type="button"]:disabled {
     box-shadow: 0 12px 25px rgba(31, 120, 209, 0.5);
 }
 
+/* Adicione ao seu arquivo CSS */
+.progress-container {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #f39c12;
+    width: 0%;
+    transition: width 0.4s ease;
+}
+
+
 /* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     

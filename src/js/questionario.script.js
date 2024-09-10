@@ -65,6 +65,35 @@ document.addEventListener('DOMContentLoaded', () => {
         return 0;
     }
 
+    // Função para passar para a próxima seção
+    function nextSection(nextSectionId) {
+        if (!nameIsValid()) {
+            alert('Por favor, preencha seu nome.');
+            return;
+        }
+
+        if (!isValidSelection()) {
+            alert('Por favor, escolha uma opção válida.');
+            return;
+        }
+
+        if (nextSectionId === 'section-importante') {
+            const nameInput = document.getElementById('nome').value;
+            const importanteTexto = document.getElementById('importante-texto');
+            importanteTexto.textContent = `Atenção, ${nameInput}, é importante que você reserve um tempo, serão cerca de 36 perguntas nesse questionário. Boa sorte!`;
+        }
+
+        const nextSectionIndex = Array.from(sections).findIndex(section => section.id === nextSectionId);
+        if (nextSectionIndex !== -1) {
+            currentSectionIndex = nextSectionIndex;
+            showSection(currentSectionIndex);
+
+            if (nextSectionId === 'section-resultados') {
+                showResults();
+            }
+        }
+    }
+
     // Função para mostrar os resultados
     function showResults() {
         const categories = [
@@ -113,35 +142,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Função para passar para a próxima seção
-    function nextSection(nextSectionId) {
-        if (!nameIsValid()) {
-            alert('Por favor, preencha seu nome.');
-            return;
-        }
-
-        if (!isValidSelection()) {
-            alert('Por favor, escolha uma opção válida.');
-            return;
-        }
-
-        if (nextSectionId === 'section-importante') {
-            const nameInput = document.getElementById('nome').value;
-            const importanteTexto = document.getElementById('importante-texto');
-            importanteTexto.textContent = `Atenção, ${nameInput}, é importante que você reserve um tempo, serão cerca de 36 perguntas nesse questionário. Boa sorte!`;
-        }
-
-        const nextSectionIndex = Array.from(sections).findIndex(section => section.id === nextSectionId);
-        if (nextSectionIndex !== -1) {
-            currentSectionIndex = nextSectionIndex;
-            showSection(currentSectionIndex);
-
-            if (nextSectionId === 'section-resultados') {
-                showResults();
-            }
-        }
-    }
+    
 
     showSection(currentSectionIndex);
     window.nextSection = nextSection;
 });
+
+
+

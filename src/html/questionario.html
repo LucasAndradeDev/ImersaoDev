@@ -16,6 +16,9 @@
             <p class="description">Responda ao questionário para obter recomendações personalizadas de carreiras em TI.
                 Se preferir, você também pode explorar roadmaps diretamente.</p>
         </header>
+
+       
+
         <form id="questionario">
             <!-- Dados Pessoais -->
             <section class="section" id="section-dados-pessoais">
@@ -27,8 +30,7 @@
             <!-- Seção Importante -->
             <section class="section" id="section-importante">
                 <h2>IMPORTANTE</h2>
-                <p id="importante-texto">Atenção, é importante que você reserve um tempo, serão cerca de 36 perguntas
-                    nesse questionário. Boa sorte!</p>
+                <p id="importante-texto"></p>
                 <div class="button-container">
                     <input type="button" value="Voltar ao menu" onclick="window.location.href='../../index.html'"
                         class="btn-form">
@@ -780,10 +782,12 @@
                         class="btn-form">
                 </div>
             </section>
-
-
-
         </form>
+
+         <!-- Barra de progresso -->
+         <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
     </div>
 </body>
 

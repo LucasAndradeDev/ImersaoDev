@@ -210,6 +210,53 @@ a:hover {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.05); /* Efeito pulsante */
+        transform: scale(1.02); 
+    }
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden; /* Impede scroll horizontal */
+        overflow-y: auto; /* Permite scroll vertical se necessário */
+        height: 100%; /* Garante que o body ocupe 100% da altura da viewport */
+        width: 100%; /* Garante que o body ocupe 100% da largura da viewport */
+    }
+
+    .container {
+        padding: 15px; /* Reduz o padding para melhorar o uso do espaço */
+        margin: 10px auto; /* Ajusta a margem para centralizar o conteúdo */
+        border-radius: 10px; /* Reduz as bordas arredondadas */
+        max-width: calc(100% - 20px); /* Garante que o container não ultrapasse a tela */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduz o tamanho do texto para melhor visualização */
+        margin-bottom: 10px; /* Ajusta o espaçamento inferior */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Ajusta o tamanho dos subtítulos para adequar-se ao espaço */
+        margin-bottom: 10px; /* Ajusta o espaçamento inferior */
+    }
+
+    p, ul {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para maior legibilidade em telas menores */
+        padding-left: 15px; /* Ajusta o padding da lista para não ocupar muito espaço */
+    }
+
+    ul {
+        margin-bottom: 10px; /* Ajusta a margem inferior para melhor espaçamento */
+    }
+
+    .section {
+        padding: 10px; /* Reduz o padding para melhor uso do espaço */
+        margin: 10px 0; /* Ajusta a margem para espaçamento adequado */
+    }
+
+    .return-button .button {
+        padding: 10px 20px; /* Ajusta o padding para tornar o botão mais acessível */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+        border-radius: 8px; /* Reduz o tamanho das bordas arredondadas */
     }
 }

@@ -179,35 +179,53 @@ p {
     }
 }
 
-
 /* Media Queries para Mobile */
 @media (max-width: 768px) {
-    .container {
-        padding: 15px; 
-        max-width: 80%; 
 
+    html, body {
+        overflow-x: hidden; /* Impede scroll horizontal */
+        overflow-y: hidden; /* Impede scroll vertical */
+        height: 100%; /* Garante que o body ocupe 100% da altura da viewport */
+        width: 100%; /* Garante que o body ocupe 100% da largura da viewport */
+        margin: 0; 
+    }
+
+    .container {
+        padding: 0px;
+        max-width: 100%; 
+        max-height: 100%;
+        box-sizing: border-box; 
+        border-radius: none;
     }
 
     h1 {
-        font-size: 2.1rem; 
+        font-size: 2.1rem; /* Reduz o tamanho do texto para cabeçalhos em telas pequenas */
+        margin-bottom: 15px; /* Adiciona um pouco mais de espaço abaixo do cabeçalho */
+        text-align: center; /* Centraliza o texto do cabeçalho */
     }
 
-    
     .description {
-        font-size: 1.2rem; 
-        margin-bottom: 10px;
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte para melhor leitura em telas pequenas */
+        margin-bottom: 15px; /* Adiciona um pouco mais de espaço abaixo da descrição */
+        text-align: center; /* Centraliza o texto da descrição */
     }
 
     .option {
-        padding: 10px; 
-        max-width: 100%; 
+        padding: 15px; /* Aumenta o padding para melhorar o espaçamento interno */
+        max-width: 100%; /* Garante que a opção ocupe 100% da largura da tela */
+        margin: 10px auto; /* Adiciona margens superior e inferior para espaçamento e centraliza horizontalmente */
+        box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
     }
 
     h2 {
-        font-size: 1.6rem; 
+        font-size: 1.6rem; /* Ajusta o tamanho da fonte para melhor leitura em telas pequenas */
+        margin-bottom: 10px; /* Adiciona um pouco de espaço abaixo dos subtítulos */
+        text-align: center; /* Centraliza o texto dos subtítulos */
     }
 
     p {
-        font-size: 0.8rem; 
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte para melhor leitura em telas pequenas */
+        text-align: center; /* Centraliza o texto dos parágrafos */
+        margin: 0 15px; /* Adiciona um pouco de margem nas laterais para evitar que o texto toque as bordas */
     }
 }
